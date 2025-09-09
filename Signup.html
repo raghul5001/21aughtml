@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="Signup.css">
+</head>
+
+<body class="signup-main">
+    
+     <div class="signup-wrap">
+     <h1>Signup Page</h1>
+
+     <input type="text" placeholder="Enter ur username" id="user-input"/>
+      <input type="password" placeholder="Enter ur password" id="pass-input"/>
+       <input type="number" placeholder="Enter ur phonenumber" id="num-input"/>
+        <input type="email" placeholder="Enter ur email" id="email-input"/>
+         <input type="text" placeholder="Enter ur city" id="city-input"/>
+
+       
+         <button onclick="handleSubmit()">Signup</button>
+      
+         </div>
+
+
+         <script>
+          function handleSubmit(){
+            let user = document.getElementById("user-input").value
+             let pass = document.getElementById("pass-input").value
+              let num = document.getElementById("num-input").value
+               let email = document.getElementById("email-input").value
+                let city = document.getElementById("city-input").value
+
+                if(user === '' || pass === '' || num === '' || email === '' || city === ''){
+                    alert("please enter all the fields")
+                   
+                }else{
+                     localStorage.setItem( "Username" , user )
+                     localStorage.setItem( "Password" , pass)
+                    alert("Signup success")
+                    window.location.href = "Login.html"
+                }
+          }
+         </script>
+   
+</body>
+
+
+
+</html>
+

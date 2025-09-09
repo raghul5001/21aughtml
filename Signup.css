@@ -1,0 +1,15 @@
+.signup-wrap{
+        display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 15px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.signup-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+    background: cornsilk;
+}

@@ -1,0 +1,16 @@
+.hlo{
+    color: aqua;
+}
+
+.hlo:hover{
+    color: green;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:767px){
+    .hlo{
+    color: red;
+    display: none;
+
+}
+}
